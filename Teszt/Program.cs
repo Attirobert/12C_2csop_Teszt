@@ -11,7 +11,7 @@ namespace Teszt
         public static void Main()
         {
             Console.WriteLine("Helló Világ!");
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
