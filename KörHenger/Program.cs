@@ -10,6 +10,7 @@ namespace KörHenger
     {
         static void Main(string[] args)
         {
+            
             // 1. példány
             Kör k1 = new Kör();
             k1.SetSugar(15);

@@ -8,7 +8,7 @@ namespace KörHenger
 {
     class Kör
     {
-        private double sugar,
+        protected double sugar,
             terület,
             kerület;
 
@@ -48,5 +48,31 @@ namespace KörHenger
         {
             return this.sugar;
         }
+    }
+
+    class Henger : Kör
+    {
+        // Osztályváltozók
+        private double térfogat,
+            magasság;
+
+        // Konstruktor
+        public Henger(double s, double m)
+        {
+            // Változók beállítása
+            this.sugar = s;
+            this.magasság = m;
+
+            // Számítások elvégzése
+            SetKerület();
+            SetTerület();
+            this.térfogat = this.terület * this.magasság;
+        }
+
+        public double GetTérfogat()
+        {
+            return this.térfogat;
+        }
+
     }
 }
