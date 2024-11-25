@@ -13,12 +13,14 @@ namespace KöHenger_UnitTest
             // Arrange - Feltételek beállítása
             double sugár = 5;
             Kör kör = new Kör(sugár);
-            kör.SetKerület();
-            double vártEredm = 31.4;
+            double vártEredm = 31.42;
 
             // Act - Végrehajtás
+            kör.SetKerület();
+            double kapottEredm = kör.GetKerület();
 
             // Assert - Kiértékelés
+            Assert.AreEqual(vártEredm, kapottEredm);
         }
 
         [TestMethod]

@@ -12,20 +12,20 @@ namespace KörHenger
         {
             
             // 1. példány
-            Kör k1 = new Kör();
-            k1.SetSugar(15);
-            k1.SetTerület();
-            k1.SetKerület();
+            //Kör k1 = new Kör();
+            //k1.SetSugar(15);
+            //k1.SetTerület();
+            //k1.SetKerület();
 
             //kiír(k1);
 
             // 2. példány
-            Kör k2 = new Kör(58);
+            Kör k2 = new Kör(5);
             k2.SetKerület();
             k2.SetTerület();
 
             //kiír(k2);
-
+            /*
             // 1. henger 
             try
             {
@@ -51,7 +51,7 @@ namespace KörHenger
                 Console.WriteLine(e.Message);
             }
 
-
+            */
 
             Console.ReadKey();
         }
