@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34301.259
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt", "Teszt\Teszt.csproj", "{A1B2C07C-992D-466A-AE7A-7EDCC5F4C7D8}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negyzet.Tests", "Negyzet.Tests\Negyzet.Tests.csproj", "{23C16FAF-57D5-42A4-8926-843385EB461C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KöHenger_UnitTest", "KöHenger_UnitTest\KöHenger_UnitTest.csproj", "{838491DB-3217-4EF6-A480-A6BEC7EBCBD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtvaltOOP", "AtvaltOOP\AtvaltOOP.csproj", "{D95D7CF6-6631-40C9-A475-34D4D93B4B13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{838491DB-3217-4EF6-A480-A6BEC7EBCBD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{838491DB-3217-4EF6-A480-A6BEC7EBCBD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{838491DB-3217-4EF6-A480-A6BEC7EBCBD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95D7CF6-6631-40C9-A475-34D4D93B4B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95D7CF6-6631-40C9-A475-34D4D93B4B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95D7CF6-6631-40C9-A475-34D4D93B4B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95D7CF6-6631-40C9-A475-34D4D93B4B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
