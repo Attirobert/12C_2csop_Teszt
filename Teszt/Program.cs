@@ -10,8 +10,13 @@ namespace Teszt
     {
         public static void Main()
         {
+            SajatException sajatException = new SajatException("Ez a saját kivételkezelőm");
             Console.WriteLine("Helló Világ!");
-            //Console.ReadKey();
+
+            Console.WriteLine("Dobok egy hátast.");
+            if (true) throw sajatException;
+
+            Console.ReadKey();
         }
     }
 }
