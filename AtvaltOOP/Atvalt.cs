@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 A megadott bináris számot átváltja tízes alapú számmá és vissza.
 Metódusok:
  - Konstruktor
- - Szám input sztringként. Megjegyzés: Mivel lehet olyan decimális szám, amely csak nullából éls egyesből áll, ezért kikötjük, hogy a bináris szám első karaktere pl. 0 legyen!
+ - Szám input sztringként. Megjegyzés: Mivel lehet olyan decimális szám, amely csak nullából és egyesből áll, ezért kikötjük, hogy a bináris szám első karaktere pl. 0 legyen!
  - Átváltás
  - Eredmény lekérése sztringként
  */
@@ -26,7 +26,7 @@ namespace AtvaltOOP
         public Atvalt(string szam) 
         {
             // Ellenőrzöm az inputot
-            if (isBinaris(szam)) binarisToDecimalis(szam);  // Ha bináris, átalakítom decimálssá, egyébként...
+            if (isBinaris(szam)) binarisToDecimalis(szam);  // Ha bináris, átalakítom decimálissá, egyébként...
             else if (isDecimal(szam)) decimalToBinaris(szam);   // ... ha decimális, akkor átalakítom binárissá, egyébként ...
             else throw new FormatException("A megadott adat nem szám!");    // ... hibás az adat
         }
