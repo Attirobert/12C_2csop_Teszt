@@ -41,7 +41,7 @@ namespace AtvaltOOP
             }
         }
 
-        private bool isDecimal(string szam)
+        public bool isDecimal(string szam)
         {
             // A decimálist úgy vizsgáljuk, hogy konvertálható-e
             bool eredm = true;

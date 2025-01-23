@@ -1,19 +1,30 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-
+using AtvaltOOP;
+/*
+ * Ne felejtsük el, hogy a tesztelt metódusokat public-ra kell állítani! A tesztek lefutása után visszaállíthatók
+ */
 namespace AtvaltOOP_UnitTeszt
 {
     [TestClass]
     public class Atvalt_ClassUnitTest   // Az Teszt osztály nevében jelzem, hogy melyik osztályt tesztelem
     {
+        // Mivel mindegyik teszt az osztály metódusait teszteli, ezért az osztály itt egyszer példányosítható
+        Atvalt atvalt = new Atvalt();
+
         [TestMethod]
-        public void iSdecimal_TestMethod()  // A tesztmetódus nevében juelzem, hogy melyik metódust tesztelem
+        public void iSdecimal_True()  // A tesztmetódus nevében jelzem, hogy melyik metódust tesztelem és mire
         {
             // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "21";
+            bool vartEredm = true,
+                kapottEredm = false;
 
             // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isDecimal(szoveg);
 
-            // Arrange - Az eredmény kiértékelése
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
         }
     }
 }
