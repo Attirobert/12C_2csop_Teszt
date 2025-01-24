@@ -26,5 +26,35 @@ namespace AtvaltOOP_UnitTeszt
             // Assert - Az eredmény kiértékelése
             Assert.AreEqual(kapottEredm, vartEredm);
         }
+
+        [TestMethod]
+        public void iSdecimal_False()  // Ha nem szám
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "2k1";
+            bool vartEredm = false,
+                kapottEredm = false;
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isDecimal(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+
+        [TestMethod]
+        public void iSdecimal_False2()  // Ha szám, de bináris
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "0110";
+            bool vartEredm = false,
+                kapottEredm = false;
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isDecimal(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
     }
 }
