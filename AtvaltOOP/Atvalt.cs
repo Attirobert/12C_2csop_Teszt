@@ -73,13 +73,18 @@ namespace AtvaltOOP
         {
             bool eredm = true;  // 
             if (szam[0] == '0')     // Mivel az elvárás szerint a bináris szám első karaktere 0!
-                for (int i=1; i < szam.Length; i++)
+            {
+                for (int i = 1; i < szam.Length; i++)
                     if (szam[i] != '0' && szam[i] != '1')   // ha nem egyenlő 0-val ÉS nem egyenlő 1-gyel, akkor már nem lehet bináris ...
                     {
                         eredm = false;
                         break;                  // ... ezért befejeződik a ciklus
                     }
-
+            }
+            else
+            {
+                eredm = false;
+            }
             return eredm;
         }
     }
