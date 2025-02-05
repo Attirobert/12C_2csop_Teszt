@@ -56,5 +56,72 @@ namespace AtvaltOOP_UnitTeszt
             // Assert - Az eredmény kiértékelése
             Assert.AreEqual(kapottEredm, vartEredm);
         }
+
+        // Tesztelni az isBinaris metódust igaz és hamis adatokra is
+        // A teszt metódusok nevei: isBinaris_True() és isBinaris_False
+
+        [TestMethod]
+        public void iSBinaris_False()  // Ha szám, de nem bináris
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "8";
+            bool vartEredm = false,
+                kapottEredm = false;
+
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isBinaris(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+        [TestMethod]
+        public void iSBinaris_False2()  // Ha szám 0 1 , de nem bináris
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "111";
+            bool vartEredm = false,
+                kapottEredm = false;
+
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isBinaris(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+        [TestMethod]
+        public void iSBinaris_True()  // Ha szám bináris
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "00111";
+            bool vartEredm = true,
+                kapottEredm = false;
+
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.isBinaris(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+        // Tesztelni a decimalToBinaris metódust igaz és hamis adatokra is.
+        // A teszt metódusok nevei: decimalToBinaris_True() és decimalToBinaris_False
+        [TestMethod]
+
+        public void decimalToBinaris_True()
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "111";
+            string vartEredm = "01101111",
+                kapottEred = String.Empty;
+
+            // Act - A vizsgált metódus végrehajtása
+            //kapottEredm = atvalt.isDecimal(szoveg);
+        }
+
+        // Tesztelni a binarisToDecimalis metódust igaz és hamis adatokra is.
+        // A teszt metódusok nevei: binarisToDecimalis_True() és binarisToDecimalis_False
+
     }
 }

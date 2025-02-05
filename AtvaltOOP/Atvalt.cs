@@ -69,7 +69,7 @@ namespace AtvaltOOP
             }
         }
 
-        private bool isBinaris(string szam)
+        public bool isBinaris(string szam)
         {
             bool eredm = true;  // 
             if (szam[0] == '0')     // Mivel az elvárás szerint a bináris szám első karaktere 0!
