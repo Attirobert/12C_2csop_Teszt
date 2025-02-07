@@ -31,14 +31,17 @@ namespace AtvaltOOP
             else throw new FormatException("A megadott adat nem szám!");    // ... hibás az adat
         }
 
-        private void decimalToBinaris(string szam)
+        public string decimalToBinaris(string szam)
         {
             // A eljárás a 2-es maradékos osztás elve
+            string eredmeny = String.Empty;
+            int decSzam = Convert.ToInt32(szam);
             while (decSzam > 0)
             {
                 eredmeny = decSzam % 2 + eredmeny;
                 decSzam /= 2;
             }
+            return eredmeny;
         }
 
         public bool isDecimal(string szam)
@@ -58,15 +61,18 @@ namespace AtvaltOOP
             return eredm;
         }
 
-        private void binarisToDecimalis(string szam)
+        public int binarisToDecimalis(string szam)
         {
             // Az eljárás a helyi és alaki érték szorzata
+            int decSzam = 0;
             int j = 1;
             for (int i = szam.Length-1; i > 0; i--)
             {
                 decSzam += Convert.ToInt32(szam[i]) * j;
                 j *= 2;
             }
+
+            return decSzam;
         }
 
         public bool isBinaris(string szam)

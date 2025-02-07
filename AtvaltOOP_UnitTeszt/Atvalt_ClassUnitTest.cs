@@ -98,7 +98,6 @@ namespace AtvaltOOP_UnitTeszt
             bool vartEredm = true,
                 kapottEredm = false;
 
-
             // Act - A vizsgált metódus végrehajtása
             kapottEredm = atvalt.isBinaris(szoveg);
 
@@ -117,11 +116,55 @@ namespace AtvaltOOP_UnitTeszt
                 kapottEred = String.Empty;
 
             // Act - A vizsgált metódus végrehajtása
-            //kapottEredm = atvalt.isDecimal(szoveg);
+            kapottEred = atvalt.decimalToBinaris(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEred, vartEredm);
+        }
+
+        public void decimalToBinaris_False()
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "1111";
+            string vartEredm = "0101110",
+                kapottEredm = String.Empty;
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.decimalToBinaris(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
         }
 
         // Tesztelni a binarisToDecimalis metódust igaz és hamis adatokra is.
         // A teszt metódusok nevei: binarisToDecimalis_True() és binarisToDecimalis_False
+        public void binarisToDecimalis_True()
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "0101011";
+            int vartEredm = 43,
+                kapottEredm = 0;
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.binarisToDecimalis(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreEqual(kapottEredm, vartEredm);
+        }
+
+        public void binarisToDecimalis_False()
+        {
+            // Arrange - Tesztkörnyezet beállítása
+            string szoveg = "001010";
+            int vartEredm = 52, // Mivel nem egyezést vizsgálunk, ezért ez is tetszőleges érték lehet
+                kapottEredm = 0;
+
+            // Act - A vizsgált metódus végrehajtása
+            kapottEredm = atvalt.binarisToDecimalis(szoveg);
+
+            // Assert - Az eredmény kiértékelése
+            Assert.AreNotEqual(kapottEredm, vartEredm);
+        }
 
     }
 }
