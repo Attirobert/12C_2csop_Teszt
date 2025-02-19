@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haromszogek", "Haromszogek\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haromszogek_UnitTest", "Haromszogek_UnitTest\Haromszogek_UnitTest.csproj", "{3AA64F42-A25D-47C2-A8E1-4E603273F250}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorTDD", "KorTDD\KorTDD.csproj", "{8EE11B6C-1A6E-49E0-ADC9-33582FC5AAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorTDD_Test", "KorTDD_Test\KorTDD_Test.csproj", "{7E64864D-0C05-4BF3-BDB0-0AE4AC7AEAF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{3AA64F42-A25D-47C2-A8E1-4E603273F250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AA64F42-A25D-47C2-A8E1-4E603273F250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AA64F42-A25D-47C2-A8E1-4E603273F250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE11B6C-1A6E-49E0-ADC9-33582FC5AAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE11B6C-1A6E-49E0-ADC9-33582FC5AAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE11B6C-1A6E-49E0-ADC9-33582FC5AAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE11B6C-1A6E-49E0-ADC9-33582FC5AAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E64864D-0C05-4BF3-BDB0-0AE4AC7AEAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E64864D-0C05-4BF3-BDB0-0AE4AC7AEAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E64864D-0C05-4BF3-BDB0-0AE4AC7AEAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E64864D-0C05-4BF3-BDB0-0AE4AC7AEAF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
