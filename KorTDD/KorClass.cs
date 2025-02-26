@@ -18,14 +18,18 @@ namespace KorTDD
             this.sugar = r;
         }
 
+        public void setSugar(double r) { this.sugar = r;}
+
         // Kerület számítás
         public double setKerulet(double r) {
-            // return this.kerulet = 2 * r * Math.PI;
-            return 0.0;
+            if (r <= 0.0)
+            {
+                throw new ArgumentException();
+            }
+            return 2 * this.sugar * Math.Round(Math.PI, 2);
         }
         // Terület számítás
         public double setTerulet(double r) {
-            //return this.terulet = r * r * Math.PI;
             return 0;
         }
         public double getSugar() { return sugar; }
