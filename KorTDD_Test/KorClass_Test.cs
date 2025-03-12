@@ -26,10 +26,11 @@ namespace KorTDD_Test
             Assert.AreEqual(kapottEredm, vartEredm);
         }
 
-        [TestMethod]
+        [TestMethod, ExpectedException(typeof(ArgumentException))]
         public void setKerulet_teszt_False_alatt()
         {
             // Arrange
+            kor.setSugar(0);
             double sugar = kor.getSugar();
             double vartEredm = 25.11,
                 kapottEredm;

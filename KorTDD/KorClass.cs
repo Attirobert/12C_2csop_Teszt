@@ -33,7 +33,5 @@ namespace KorTDD
             return 0;
         }
         public double getSugar() { return sugar; }
-
-
     }
 }
